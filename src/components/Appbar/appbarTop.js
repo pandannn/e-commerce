@@ -7,7 +7,7 @@ import LanguageIcon from "@mui/icons-material/Language";
 import React from "react";
 import { Flex, BorderTextNav } from "./style";
 
-const appbar = () => {
+const AppBarTop = () => {
   return (
     <>
       <Container>
@@ -40,4 +40,4 @@ const appbar = () => {
   );
 };
 
-export default appbar;
+export default AppBarTop;

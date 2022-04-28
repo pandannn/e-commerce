@@ -1,12 +1,12 @@
 import { Container } from "@mui/material";
 import React from "react";
-import Navbar from "../components/navbar";
+import { NavbarWrapper } from "../components/Common";
 
-const CatalogDetail = () => {
+const Product = () => {
   return (
     <main>
       {/* navbar */}
-      <Navbar />
+      <NavbarWrapper />
       {/* body */}
       <Container>
         <div>
@@ -17,4 +17,4 @@ const CatalogDetail = () => {
   );
 };
 
-export default CatalogDetail;
+export default Product;

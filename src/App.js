@@ -1,6 +1,6 @@
 import "./App.css";
 import Home from "./pages/Home";
-import CatalogDetail from "./pages/CatalogDetail";
+import Product from "./pages/Product";
 import Theme from "./theme";
 import { ThemeProvider } from "@mui/material/styles";
 
@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <ThemeProvider theme={Theme}>
-        {/* <CatalogDetail /> */}
+        {/* <Product /> */}
         <Home />
       </ThemeProvider>
     </div>
