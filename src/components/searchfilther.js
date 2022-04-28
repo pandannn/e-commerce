@@ -1,18 +1,12 @@
 import React from "react";
-import {
-  Container,
-  Box,
-  FormControlLabel,
-  TextField,
-  Button,
-} from "@mui/material";
+import { Container, FormControlLabel, Button } from "@mui/material";
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
 import { FlexCol, FlexRow } from "./Searchfiter/style";
 import Checkbox from "@mui/material/Checkbox";
 import Rating from "@mui/material/Rating";
 // import Typography from "@mui/material/Typography";
 
-const searchtab = () => {
+const searchfilther = () => {
   return (
     <main>
       <Container>
@@ -22,7 +16,6 @@ const searchtab = () => {
         </FlexRow>
         <FlexCol>
           <p>By Category</p>
-
           <FormControlLabel label="T-shirts" control={<Checkbox />} />
           <FormControlLabel label="Sneakers" control={<Checkbox />} />
         </FlexCol>
@@ -35,11 +28,11 @@ const searchtab = () => {
           </Flex> */}
         <FlexCol>
           <p>Rating</p>
-          <Rating name="half-rating" defaultValue={5} precision={1} />
-          <Rating name="half-rating" defaultValue={4} precision={1} />
-          <Rating name="half-rating" defaultValue={3} precision={1} />
-          <Rating name="half-rating" defaultValue={2} precision={1} />
-          <Rating name="half-rating" defaultValue={1} precision={1} />
+          <Rating name="five-rating" defaultValue={5} precision={1} />
+          <Rating name="four-rating" defaultValue={4} precision={1} />
+          <Rating name="three-rating" defaultValue={3} precision={1} />
+          <Rating name="two-rating" defaultValue={2} precision={1} />
+          <Rating name="one-rating" defaultValue={1} precision={1} />
         </FlexCol>
         <Button
           variant="contained"
@@ -52,4 +45,4 @@ const searchtab = () => {
   );
 };
 
-export default searchtab;
+export default searchfilther;
