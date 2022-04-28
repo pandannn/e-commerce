@@ -4,8 +4,9 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea, Container } from "@mui/material";
+import { Box } from "@mui/system";
 
-const product = [
+const products = [
   {
     img: "https://cf.shopee.co.th/file/1625203f3d829f95c2ab143a3226cd23",
     name: "Sneakers",
@@ -100,42 +101,35 @@ const catalog = () => {
             flexDirection: "column",
           }}
         >
-          {/* <CardActionArea>
-            <CardMedia
-              component="img"
-              height="140"
-              image="https://cf.shopee.co.th/file/1625203f3d829f95c2ab143a3226cd23"
-              alt="green iguana"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                gachapon cat
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                molestiae fugit, velit temporibus.
-              </Typography>
-            </CardContent> 
-          </CardActionArea> */}
-          {/* <CardActionArea> */}
-          {product.map((item) => (
-            // <CardContent
-
-            //   img={item.img}
-            //   title={item.title}
-            //   author={item.author}
-            //   price={item.price}
-            // />
-            <img src={item.img} alt="" />
-
-            // <p>{item.title}</p>
-            // <p>B {item.price}</p>
-
-            // <CardContent>
-            //   <Typography >{item.title}</Typography>
-            // </CardContent>
-          ))}
-          {/* </CardActionArea> */}
+          <Box
+            sx={{
+              display: "flex",
+              flexWrap: "wrap",
+              rowGap: "1%",
+              justifyContent: "space-between",
+            }}
+          >
+            {products.map((product) => (
+              <CardActionArea sx={{ width: "19%" }}>
+                <CardMedia
+                  component="img"
+                  height="140"
+                  image={product.img}
+                  alt="green iguana"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    {product.name}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                    molestiae fugit, velit temporibus <br />
+                    Price: {product.price}
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            ))}
+          </Box>
         </Card>
       </Container>
     </>

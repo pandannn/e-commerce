@@ -29,7 +29,15 @@ const searchbar = () => {
         <Button
           variant="contained"
           color="primary"
-          sx={{ bgcolor: "#FFFF", color: "#373737" }}
+          sx={{
+            bgcolor: "#FFFF",
+            color: "#373737",
+            "&:hover": {
+              backgroundColor: "#bdbdbd",
+              borderColor: "#bdbdbd",
+              color: "black",
+            },
+          }}
         >
           Latest
         </Button>
