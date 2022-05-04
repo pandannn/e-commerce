@@ -1,6 +1,6 @@
 import React from "react";
 import { NavbarWrapper, SearchBar } from "../components/Common";
-// import SearchFilter from "../components/SearchFilter";
+import SearchFilter from "../components/SearchFilter";
 import Catalogue from "../components/Catalogue";
 import { Box, Container } from "@mui/material";
 
@@ -11,7 +11,7 @@ const Home = () => {
       <NavbarWrapper />
       {/* body */}
       <Container sx={{ display: "flex" }}>
-        {/* <SearchFilter /> */}
+        <SearchFilter />
         <Box>
           <SearchBar />
           <Catalogue />

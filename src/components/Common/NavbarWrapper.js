@@ -1,6 +1,6 @@
 import React from "react";
-import { AppBarBottom, AppBarTop } from "../Appbar";
 import { Navbar } from "../Appbar/style";
+import { AppBarBottom, AppBarTop } from "../Appbar";
 
 const NavbarWrapper = () => {
   return (

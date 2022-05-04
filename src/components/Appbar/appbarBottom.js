@@ -8,7 +8,7 @@ import InputBase from "@mui/material/InputBase";
 // import Logo from "./images/logo.png";
 // import { Navbar } from "./style";
 
-const appbarBottom = () => {
+const AppBarBottom = () => {
   return (
     <Container>
       <Toolbar>
@@ -36,4 +36,4 @@ const appbarBottom = () => {
   );
 };
 
-export default appbarBottom;
+export default AppBarBottom;
