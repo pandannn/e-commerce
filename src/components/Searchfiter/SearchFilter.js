@@ -1,12 +1,12 @@
 import React from "react";
 import { Container, FormControlLabel, Button } from "@mui/material";
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
-import { FlexCol, FlexRow } from "./Searchfiter/style";
+import { FlexCol, FlexRow } from "./style";
 import Checkbox from "@mui/material/Checkbox";
 import Rating from "@mui/material/Rating";
 // import Typography from "@mui/material/Typography";
 
-const searchfilther = () => {
+const SearchFilter = () => {
   return (
     <main>
       <Container>
@@ -45,4 +45,4 @@ const searchfilther = () => {
   );
 };
 
-export default searchfilther;
+export default SearchFilter;

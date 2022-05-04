@@ -1,22 +1,21 @@
 import React from "react";
-import Navbar from "../components/navbar";
-import Searchfilther from "../components/searchfilther";
-import Catalog from "../components/catalog";
-import { Container } from "@mui/material";
-import Searchbar from "../components/searchbar";
+import { NavbarWrapper, SearchBar } from "../components/Common";
+// import SearchFilter from "../components/SearchFilter";
+import Catalogue from "../components/Catalogue";
+import { Box, Container } from "@mui/material";
 
 const Home = () => {
   return (
     <>
       {/* appbar */}
-      <Navbar />
+      <NavbarWrapper />
       {/* body */}
       <Container sx={{ display: "flex" }}>
-        <Searchfilther />
-        <Container>
-          <Searchbar />
-          <Catalog />
-        </Container>
+        {/* <SearchFilter /> */}
+        <Box>
+          <SearchBar />
+          <Catalogue />
+        </Box>
       </Container>
     </>
   );
