@@ -1,10 +1,12 @@
-import { Container, Toolbar } from "@mui/material";
+import { Container, Toolbar, Button } from "@mui/material";
 import React from "react";
 import { Image } from "@mui/icons-material";
 import LocalGroceryStoreIcon from "@mui/icons-material/LocalGroceryStore";
 import SearchIcon from "@mui/icons-material/Search";
 import IconButton from "@mui/material/IconButton";
 import InputBase from "@mui/material/InputBase";
+import { Link } from "react-router-dom";
+
 // import Logo from "./images/logo.png";
 // import { Navbar } from "./style";
 
@@ -12,10 +14,12 @@ const AppBarBottom = () => {
   return (
     <Container>
       <Toolbar>
-        <Image
-          sx={{ width: "5rem" }}
-          src="https://www.freepnglogos.com/uploads/shopee-logo-png/shopee-logo-products-kjm-11.png"
-        />
+        <Link to="/">
+          <Image
+            sx={{ width: "5rem" }}
+            src="https://www.freepnglogos.com/uploads/shopee-logo-png/shopee-logo-products-kjm-11.png"
+          />
+        </Link>
         <InputBase
           sx={{
             ml: 1,
@@ -30,7 +34,10 @@ const AppBarBottom = () => {
         <IconButton type="submit" sx={{ p: "10px" }} aria-label="search">
           <SearchIcon />
         </IconButton>
-        <LocalGroceryStoreIcon sx={{ width: "10rem" }} />
+
+        <Link to="/cart">
+          <LocalGroceryStoreIcon sx={{ width: "10rem" }} />
+        </Link>
       </Toolbar>
     </Container>
   );

@@ -8,91 +8,68 @@ import { Box } from "@mui/system";
 
 const products = [
   {
-    img: "https://cf.shopee.co.th/file/1625203f3d829f95c2ab143a3226cd23",
+    img: "https://cf.shopee.co.th/file/5782309c0c03e1b377bdd8c99f04bd20",
     name: "Sneakers",
     author: "asd",
     price: "150",
   },
   {
     img: "https://cf.shopee.co.th/file/b539ece45da272d8526efe6d4f8fbe8a",
-    name: "Sneakers",
+    name: "Shirts",
     author: "asd",
     price: "250",
   },
   {
     img: "https://cf.shopee.co.th/file/3244e9062e200bfef72b2cb16dd86ade",
-    name: "Sneakers",
+    name: "Shirts",
     author: "asd",
     price: "100",
   },
   {
-    img: "https://cf.shopee.co.th/file/1625203f3d829f95c2ab143a3226cd23",
-    name: "Sneakers",
+    img: "https://cf.shopee.co.th/file/57f981c69f7b8c18d6e54ed83a7b8519_tn",
+    name: "Shirts",
     author: "asd",
     price: "50",
   },
   {
-    img: "https://cf.shopee.co.th/file/1625203f3d829f95c2ab143a3226cd23",
-    name: "Sneakers",
+    img: "https://cf.shopee.co.th/file/785e63c18eb32de6f04a6f583246e22f",
+    name: "Shirts",
     author: "asd",
     price: "350",
   },
   {
-    img: "https://cf.shopee.co.th/file/1625203f3d829f95c2ab143a3226cd23",
+    img: "https://cf.shopee.co.th/file/3d3ddc4644d5e23d0af8ba9047c3b48a",
     name: "Sneakers",
     author: "asd",
     price: "150",
   },
   {
-    img: "https://cf.shopee.co.th/file/1625203f3d829f95c2ab143a3226cd23",
+    img: "https://cf.shopee.co.th/file/7546debc10c086010f758ec088ad8694",
     name: "Sneakers",
     author: "asd",
     price: "250",
   },
   {
-    img: "https://cf.shopee.co.th/file/1625203f3d829f95c2ab143a3226cd23",
+    img: "https://cf.shopee.co.th/file/ad1bb602bb77ffe369b2f63b00e3d0f1",
     name: "Sneakers",
     author: "asd",
     price: "200",
   },
   {
-    img: "https://cf.shopee.co.th/file/1625203f3d829f95c2ab143a3226cd23",
+    img: "https://cf.shopee.co.th/file/21aef62612bf304f22c1ad113acbfb63",
     name: "Sneakers",
     author: "asd",
     price: "150",
   },
   {
-    img: "https://cf.shopee.co.th/file/1625203f3d829f95c2ab143a3226cd23",
-    name: "Sneakers",
+    img: "https://cf.shopee.co.th/file/39dcc87686621a8008ba11a968a0eda0",
+    name: "Shirts",
     author: "asd",
     price: "100",
   },
 ];
 const catalog = () => {
   return (
-    // <>
-    //   <ImageList
-    //     sx={{ height: 500, overflow: "hidden" }}
-    //     cols={5}
-    //     rowHeight={164}
-    //   >
-    //     {itemData.map((item) => (
-    //       <ImageListItem key={item.img}>
-    //         <img
-    //           src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-    //           srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-    //           alt={item.title}
-    //           loading="lazy"
-    //         />
-    //         <ImageListItemBar
-    //           title={item.title}
-    //           subtitle={<span>by: {item.author}</span>}
-    //           position="below"
-    //         />
-    //         </ImageListItem>
-    //     ))}
-    //   </ImageList>
-    // </>
     <>
       <Container sx={{ display: "flex" }}>
         <Card
