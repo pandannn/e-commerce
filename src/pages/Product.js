@@ -1,19 +1,28 @@
 import { Container } from "@mui/material";
 import React from "react";
 import { NavbarWrapper } from "../components/Common";
+import {
+  ProductDescription,
+  ProductImg,
+  ProductShopCard,
+  ProductSpecifications,
+  ProductTextTop,
+} from "../components/Product";
 
 const Product = () => {
   return (
-    <main>
+    <>
       {/* navbar */}
       <NavbarWrapper />
       {/* body */}
-      <Container>
-        <div>
-          <img src="https://cf.shopee.co.th/file/1625203f3d829f95c2ab143a3226cd23" />
-        </div>
+      <Container sx={{ display: "flex" }}>
+        <ProductImg />
+        <ProductTextTop />
       </Container>
-    </main>
+      <ProductShopCard sx={{ marginTop: "1rem" }} />
+      <ProductSpecifications sx={{ marginTop: "1rem" }} />
+      <ProductDescription sx={{ marginTop: "1rem" }} />
+    </>
   );
 };
 
